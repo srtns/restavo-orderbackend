@@ -50,7 +50,7 @@ public class RestaurentConroller {
 	  }
 
 	    @PatchMapping("/changeQuota/{id}/{personCount}")
-	    public ResponseEntity<Restaurent> updateEmployeePartially(@PathVariable String id, @PathVariable Integer personCount) {
+	    public ResponseEntity<Restaurent> updateQuota(@PathVariable String id, @PathVariable Integer personCount) {
 		try {
 			Restaurent rest = RestaurentRepository.findById(id).get();
 			rest.setPersonCount(personCount);

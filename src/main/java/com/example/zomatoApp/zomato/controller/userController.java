@@ -119,7 +119,7 @@ public class userController {
 	  }
 
 	  @DeleteMapping("/deleteAll")
-	  public ResponseEntity<HttpStatus> deleteAllTutorials() {
+	  public ResponseEntity<HttpStatus> deleteAllOrders() {
 	    try {
 	      userRepository.deleteAll();
 	      return new ResponseEntity<>(HttpStatus.NO_CONTENT);
